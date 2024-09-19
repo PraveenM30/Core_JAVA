@@ -22,7 +22,8 @@ created using a literal, Java checks the pool to see if an identical string alre
 the reference, otherwise, it creates a new one.
 
 
-4. Explain the difference between StringBuilder and StringBuffer. Which one would you use in a multi-threaded environment and why?
+4. Explain the difference between StringBuilder and StringBuffer. Which one would you use in a multi-threaded
+ environment and why?
 >>StringBuilder is faster but not thread-safe, while StringBuffer is thread-safe due to its synchronized
  methods. In a multi-threaded environment, you should use StringBuffer to ensure data consistency.
 

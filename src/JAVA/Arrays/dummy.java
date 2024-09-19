@@ -1,14 +1,20 @@
 package JAVA.Arrays;
 
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 public class dummy {
-    public static void main (String[] args) {
-        int a[]={3,4,5,7,8};
-        int max=0;
-        for (int i=0;i<a.length ;i++ ){
-            if (a[i]>max){
-                max=a[i];
-            }
-        }
-        System.out.println(max);
+
+    public static Integer[] removeDuplicate(Integer[] array) {
+
+        Set<Integer> set = new LinkedHashSet<>(Arrays.asList(array));
+        return set.toArray(new Integer[0]);
+    }
+
+    public static void main(String[] args) {
+        Integer numbers[]={1,1,2,2,3,3,444,55,55};
+        Integer results[]=removeDuplicate(numbers);
+        System.out.println(Arrays.toString(results));
     }
 }

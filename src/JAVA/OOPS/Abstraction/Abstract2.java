@@ -24,19 +24,19 @@ class ML3 extends ML2 {
         System.out.println("Im a method 2");
     }
     void m3(){
-        System.out.println("Im from ML3 method");
+        System.out.println("Im from ML3 concrete method");
     }
  }
  class runner4 {
     public static void main(String[] args) {
-        Abstract2 a = new ML3();
-        a.m1();
-        a.concreteNethod();
+//        Abstract2 a = new ML3();
+//        a.m1();
+//        a.concreteNethod();
 
         ML2 b = new ML3();
-        b.m1();
-        b.m2();
-        b.concreteNethod();
+//        b.m1();
+//        b.m2();
+//        b.concreteNethod();
 
         ML3 c= (ML3) b; //downcasting
         c.m3();

@@ -4,7 +4,7 @@ public class A_Notes {
 
     /* Polymorphism >> Ability of an object to take many forms
 
-    2 tyes
+    2 types
     1. Compile time polymorphism (Method Overloading)
     2. Run time Polymorphism (Method overriding)
 

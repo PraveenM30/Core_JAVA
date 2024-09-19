@@ -31,6 +31,6 @@ class runner5{
         E3 e=new E3("8th");
         System.out.println(e.getClassName());
         e.setClassName("12th");
-        System.out.println(e.getClassName()+e.getSchoolNAme());
+        System.out.println(e.getClassName()+" "+e.getSchoolNAme());
     }
 }
